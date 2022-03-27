@@ -1,0 +1,47 @@
+site_name: BOTH
+nav:
+  - Home: index.md
+  - Tutorials: home.md
+  - Documents:
+    - both: documents/boml.md
+    - both.ll_optimize:
+        - LowerOptimize: documents/boml.ll_optimize/LowerOptimize.md
+        - Feature: documents/boml.ll_optimize/Feature.md
+        - BVFIM: documents/boml.ll_optimize/BVFIM.md
+    - both.ul_optimize:
+        - UpperGrad: documents/boml.ul_optimize/UpperGrad.md
+        - BSG: documents/boml.ul_optimize/BSG.md
+        - BVFIM: documents/boml.ul_optimize/BVFIM.md
+        - IAPTTGM: documents/boml.ul_optimize/IAPTTGM.md
+        - Onestage: documents/boml.ul_optimize/Onestage.md
+        - Implicit: documents/boml.ul_optimize/Implicit.md
+        - RAD: documents/boml.ul_optimize/RAD.md
+    - both.meta_optimize: documents/boml.init_optimize.md
+    - both.optimizer: documents/boml.optimizer.md
+    - both.utils:
+        - both.model:
+            - both.model.backbone: documents/boml.model/boml.model.backbone.md
+            - both.model.meta_model: documents/boml.model/boml.model.meta_model.md
+  - Examples:
+    - methods: examples/methods.md
+    - applications: examples/applications.md
+    - practical use: examples/practical_use.md
+
+theme:
+  name: material
+  palette:
+    primary: cyan
+    accent: pink
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex
+
+extra_javascript:
+  - mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
